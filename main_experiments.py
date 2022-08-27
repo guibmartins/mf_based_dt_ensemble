@@ -276,7 +276,7 @@ def main(base_alg, mf_alg, ds_key, iterations=10, n_models=1, k_factors=1, k_fol
             y_preds.clear()
 
         # Save results (all k-fold for all iterations) to excel file
-        out_dir = f'./out/KIS_21/k_{k_factors}/{base_alg}/{mf_alg}/{ds_key}'
+        out_dir = f'./out/SIBGRAPI_2022/k_{k_factors}/{base_alg}/{mf_alg}/{ds_key}'
         out_file = f'{base_alg}_{mf_alg}_{ds_key}_n{n_models}_k{k_factors}_results_{util.get_datetime()}.xlsx'
 
         with pd.ExcelWriter('/'.join([out_dir, out_file])) as writer:
